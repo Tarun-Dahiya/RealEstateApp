@@ -12,6 +12,8 @@ import Listings from './components/Listings'
 import Login from './components/Login'
 import Register from './components/Register'
 import Properties from './components/Properties'
+import PrivacyPolicy from './components/PrivacyPolicy'
+import TermsOfService from './components/TermsOfService'
 
 const router = createBrowserRouter(
   [
@@ -55,7 +57,15 @@ const router = createBrowserRouter(
         {
           path: "/properties",
           element: <Properties />,
-        }
+        },
+        {
+          path: "/privacy",
+          element: <PrivacyPolicy />,
+        },
+        {
+          path: "/terms",
+          element: <TermsOfService />,
+        },
       ],
     }
   ]
